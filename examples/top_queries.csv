@@ -1,0 +1,6 @@
+rank,query_type,hits,total_time,avg_time,max_time,min_time,sample_query
+1,SELECT softwarecomponent,9,4720,524,1158,141,"select softwareco0_.id as id1_862_, softwareco0_.updatedById as updatedb2_862_, softwareco0_.updatedTime as updatedt3_862_, softwareco0_.createdById as createdb4_862_, softwareco0_.createdTime as crea..."
+2,INSERT assetchangelogcomponentdata,6,5927,988,1025,923,"insert into AssetChangeLogComponentData (updatedById, updatedTime, createdById, createdTime, name, oobType, removed, removedById, removedTime, componentJson) values (2, 1754369299800, 2, 1754369299800..."
+3,INSERT assetchangelog,5,5907,1181,2648,130,"insert into AssetChangeLog (updatedById, updatedTime, createdById, createdTime, name, oobType, removed, removedById, removedTime, refId, refModel, assetId, changeLogString, componentAdditionalName, co..."
+4,SELECT ssoconfig,5,3560,712,1062,480,"select ssoconfig0_.id as id1_882_, ssoconfig0_.updatedById as updatedb2_882_, ssoconfig0_.updatedTime as updatedt3_882_, ssoconfig0_.createdById as createdb4_882_, ssoconfig0_.createdTime as createdt5..."
+5,SELECT flotouser,4,1910,478,589,431,select flotouser0_.id as col_0_0_ from FlotoUser flotouser0_ where (flotouser0_.userType is not null) and (flotouser0_.removed=

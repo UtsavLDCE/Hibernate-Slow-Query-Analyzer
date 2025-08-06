@@ -1,0 +1,104 @@
+{
+  "statistics": {
+    "total_slow_queries": 52,
+    "unique_query_types": 20,
+    "total_execution_time": 32312,
+    "average_execution_time": 621.3846153846154,
+    "max_execution_time": 2648,
+    "min_execution_time": 101,
+    "analysis_timestamp": "2025-08-06T16:04:12.279097"
+  },
+  "top_by_hits": [
+    {
+      "query_type": "SELECT softwarecomponent",
+      "hits": 9,
+      "total_time": 4720,
+      "avg_time": 524.4444444444445,
+      "max_time": 1158,
+      "min_time": 141,
+      "sample_query": "select softwareco0_.id as id1_862_, softwareco0_.updatedById as updatedb2_862_, softwareco0_.updatedTime as updatedt3_862_, softwareco0_.createdById as createdb4_862_, softwareco0_.createdTime as crea...",
+      "sample_timestamp": "2025-08-05 03:16:10.294"
+    },
+    {
+      "query_type": "INSERT assetchangelogcomponentdata",
+      "hits": 6,
+      "total_time": 5927,
+      "avg_time": 987.8333333333334,
+      "max_time": 1025,
+      "min_time": 923,
+      "sample_query": "insert into AssetChangeLogComponentData (updatedById, updatedTime, createdById, createdTime, name, oobType, removed, removedById, removedTime, componentJson) values (2, 1754369299800, 2, 1754369299800...",
+      "sample_timestamp": "2025-08-05 04:48:20.723"
+    },
+    {
+      "query_type": "INSERT assetchangelog",
+      "hits": 5,
+      "total_time": 5907,
+      "avg_time": 1181.4,
+      "max_time": 2648,
+      "min_time": 130,
+      "sample_query": "insert into AssetChangeLog (updatedById, updatedTime, createdById, createdTime, name, oobType, removed, removedById, removedTime, refId, refModel, assetId, changeLogString, componentAdditionalName, co...",
+      "sample_timestamp": "2025-08-05 04:48:21.101"
+    }
+  ],
+  "top_by_individual_time": [
+    {
+      "timestamp": "2025-08-05 06:47:33.670",
+      "execution_time": 2648,
+      "operation": "INSERT",
+      "table": "assetchangelog",
+      "query_type": "INSERT assetchangelog",
+      "query": "insert into AssetChangeLog (updatedById, updatedTime, createdById, createdTime, name, oobType, removed, removedById, removedTime, refId, refModel, assetId, changeLogString, componentAdditionalName, componentJson, jsonDataId, newValue, oldValue, origin, type) values (2, 1754376451020, 2, 1754376451020, NULL, NULL,",
+      "query_preview": "insert into AssetChangeLog (updatedById, updatedTime, createdById, createdTime, name, oobType, removed, removedById, removedTime, refId, refModel, assetId, changeLogString, componentAdditionalName, co..."
+    },
+    {
+      "timestamp": "2025-08-05 07:35:13.305",
+      "execution_time": 1158,
+      "operation": "SELECT",
+      "table": "softwarecomponent",
+      "query_type": "SELECT softwarecomponent",
+      "query": "select softwareco0_.id as id1_862_, softwareco0_.updatedById as updatedb2_862_, softwareco0_.updatedTime as updatedt3_862_, softwareco0_.createdById as createdb4_862_, softwareco0_.createdTime as createdt5_862_, softwareco0_.name as name6_862_, softwareco0_.oobType as oobtype7_862_, softwareco0_.removed as removed8_862_, softwareco0_.removedById as removedb9_862_, softwareco0_.removedTime as removed10_862_, softwareco0_.refId as refid11_862_, softwareco0_.description as descrip12_862_, softwareco0_.discoveredType as discove13_862_, softwareco0_.installDate as install14_862_, softwareco0_.installLocation as install15_862_, softwareco0_.installedsize as install16_862_, softwareco0_.licenseType as license17_862_, softwareco0_.licensekey as license18_862_, softwareco0_.manufacturerId as manufac19_862_, softwareco0_.osCompatibility as oscompa20_862_, softwareco0_.quietUninstallCommand as quietun21_862_, softwareco0_.softwareAssetId as softwar22_862_, softwareco0_.softwareName as softwar23_862_, softwareco0_.sourceType as sourcet24_862_, softwareco0_.uninstallCommand as uninsta25_862_, softwareco0_.version as version26_862_ from SoftwareComponent softwareco0_ where softwareco0_.id=1259896 order by softwareco0_.id asc",
+      "query_preview": "select softwareco0_.id as id1_862_, softwareco0_.updatedById as updatedb2_862_, softwareco0_.updatedTime as updatedt3_862_, softwareco0_.createdById as createdb4_862_, softwareco0_.createdTime as crea..."
+    },
+    {
+      "timestamp": "2025-08-05 03:16:09.269",
+      "execution_time": 1131,
+      "operation": "SELECT",
+      "table": "agentbuildupload",
+      "query_type": "SELECT agentbuildupload",
+      "query": "select agentbuild0_.id as id1_19_, agentbuild0_.updatedById as updatedb2_19_, agentbuild0_.updatedTime as updatedt3_19_, agentbuild0_.createdById as createdb4_19_, agentbuild0_.createdTime as createdt5_19_, agentbuild0_.name as name6_19_, agentbuild0_.oobType as oobtype7_19_, agentbuild0_.removed as removed8_19_, agentbuild0_.removedById as removedb9_19_, agentbuild0_.removedTime as removed10_19_, agentbuild0_.agentBuildAttachment as agentbu11_19_, agentbuild0_.agentBuildHashCode as agentbu12_19_, agentbuild0_.agentType as agentty13_19_, agentbuild0_.arch as arch14_19_, agentbuild0_.buildId as buildid15_19_, agentbuild0_.platform as platfor16_19_, agentbuild0_.version as version17_19_ from AgentBuildUpload agentbuild0_ where agentbuild0_.platform=0 and agentbuild0_.arch=0 and agentbuild0_.agentType=0 order by agentbuild0_.id asc limit 1",
+      "query_preview": "select agentbuild0_.id as id1_19_, agentbuild0_.updatedById as updatedb2_19_, agentbuild0_.updatedTime as updatedt3_19_, agentbuild0_.createdById as createdb4_19_, agentbuild0_.createdTime as createdt..."
+    }
+  ],
+  "top_by_total_time": [
+    {
+      "query_type": "INSERT assetchangelogcomponentdata",
+      "hits": 6,
+      "total_time": 5927,
+      "avg_time": 987.8333333333334,
+      "max_time": 1025,
+      "min_time": 923,
+      "sample_query": "insert into AssetChangeLogComponentData (updatedById, updatedTime, createdById, createdTime, name, oobType, removed, removedById, removedTime, componentJson) values (2, 1754369299800, 2, 1754369299800...",
+      "sample_timestamp": "2025-08-05 04:48:20.723"
+    },
+    {
+      "query_type": "INSERT assetchangelog",
+      "hits": 5,
+      "total_time": 5907,
+      "avg_time": 1181.4,
+      "max_time": 2648,
+      "min_time": 130,
+      "sample_query": "insert into AssetChangeLog (updatedById, updatedTime, createdById, createdTime, name, oobType, removed, removedById, removedTime, refId, refModel, assetId, changeLogString, componentAdditionalName, co...",
+      "sample_timestamp": "2025-08-05 04:48:21.101"
+    },
+    {
+      "query_type": "SELECT softwarecomponent",
+      "hits": 9,
+      "total_time": 4720,
+      "avg_time": 524.4444444444445,
+      "max_time": 1158,
+      "min_time": 141,
+      "sample_query": "select softwareco0_.id as id1_862_, softwareco0_.updatedById as updatedb2_862_, softwareco0_.updatedTime as updatedt3_862_, softwareco0_.createdById as createdb4_862_, softwareco0_.createdTime as crea...",
+      "sample_timestamp": "2025-08-05 03:16:10.294"
+    }
+  ]
+}
